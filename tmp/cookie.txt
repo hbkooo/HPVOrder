@@ -1,0 +1,287 @@
+POST https://wx.scmttec.com/base/department/getDepartments.do HTTP/1.1
+Host: wx.scmttec.com
+Connection: keep-alive
+Content-Length: 122
+Sec-Fetch-Mode: cors
+Origin: https://wx.scmttec.com
+tk: wxtoken:81ef8042d10ceae7f337f34afc100296_f07df72ce80ace89fc7b8602dc584c40
+User-Agent: Mozilla/5.0 (Linux; Android 9; COR-AL10 Build/HUAWEICOR-AL10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120 MQQBrowser/6.2 TBS/045511 Mobile Safari/537.36 MMWEBID/9684 MicroMessenger/7.0.18.1740(0x2700123B) Process/tools WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64
+st: 9ee1ef51d31282035114a21d4a345984
+Content-Type: application/x-www-form-urlencoded
+Accept: application/json, text/plain, */*
+X-Requested-With: com.tencent.mm
+Sec-Fetch-Site: same-origin
+Referer: https://wx.scmttec.com/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: UM_distinctid=176d61668197b-02a1e977b885ce-67341f2e-448e0-176d616681a15f; _xxhm_=%7B%22address%22%3A%22%22%2C%22awardPoints%22%3A0%2C%22birthday%22%3A838915200000%2C%22createTime%22%3A1609909609000%2C%22headerImg%22%3A%22http%3A%2F%2Fthirdwx.qlogo.cn%2Fmmopen%2FxjC97SLpMq3cvXlkz52xb36XWnHt7oVewePaFv0VDRL6cKEx2b9SIkIzjHQMO6WKsUevtbvpYOPDiakZ0mJ6cXHibWdf7oXEWS%2F132%22%2C%22id%22%3A9787092%2C%22idCardNo%22%3A%22411422199608025467%22%2C%22isRegisterHistory%22%3A0%2C%22latitude%22%3A0.0%2C%22longitude%22%3A0.0%2C%22mobile%22%3A%2215927037762%22%2C%22modifyTime%22%3A1610025427000%2C%22name%22%3A%22%E5%88%98%E9%A6%99%E7%8E%89%22%2C%22nickName%22%3A%22%E9%98%B3%E5%85%89%E4%B8%8B%E7%9A%84%E9%82%A3%E4%BA%BA%22%2C%22openId%22%3A%22oWzsq537IeWEv_66fdxl2rB6Iau4%22%2C%22regionCode%22%3A%22410104%22%2C%22registerTime%22%3A1610025427000%2C%22sex%22%3A2%2C%22source%22%3A1%2C%22uFrom%22%3A%22depa_vacc_detail%22%2C%22unionid%22%3A%22oiGJM6N1lDPclKX-5C46AaSitUXw%22%2C%22wxSubscribed%22%3A1%2C%22yn%22%3A1%7D; _xzkj_=wxtoken:81ef8042d10ceae7f337f34afc100296_f07df72ce80ace89fc7b8602dc584c40; CNZZDATA1261985103=1371327906-1609907284-%7C1610362500
+
+offset=0&limit=10&name=&regionCode=4201&isOpen=1&longitude=114.40861&latitude=30.515877&sortType=1&vaccineCode=&customId=3
+
+
+# 湖北省
+	GET /base/region/childRegions.do?parentCode=42 HTTP/1.1
+	Host: wx.scmttec.com
+	Connection: keep-alive
+	Accept: application/json, text/plain, */*
+	st: 9ed5f918bf9994eef654baf1d9369f2e
+	tk: wxtoken:81ef8042d10ceae7f337f34afc100296_d6277419ce367974d0e70422bbaf3f8a
+	User-Agent: Mozilla/5.0 (Linux; Android 9; COR-AL10 Build/HUAWEICOR-AL10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120 MQQBrowser/6.2 TBS/045511 Mobile Safari/537.36 MMWEBID/9684 MicroMessenger/7.0.18.1740(0x2700123B) Process/tools WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64
+	Sec-Fetch-Mode: cors
+	X-Requested-With: com.tencent.mm
+	Sec-Fetch-Site: same-origin
+	Referer: https://wx.scmttec.com/index.html
+	Accept-Encoding: gzip, deflate, br
+	Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7
+	Cookie: UM_distinctid=176d61668197b-02a1e977b885ce-67341f2e-448e0-176d616681a15f; _xxhm_=%7B%22address%22%3A%22%22%2C%22awardPoints%22%3A0%2C%22birthday%22%3A838915200000%2C%22createTime%22%3A1609909609000%2C%22headerImg%22%3A%22http%3A%2F%2Fthirdwx.qlogo.cn%2Fmmopen%2FxjC97SLpMq3cvXlkz52xb36XWnHt7oVewePaFv0VDRL6cKEx2b9SIkIzjHQMO6WKsUevtbvpYOPDiakZ0mJ6cXHibWdf7oXEWS%2F132%22%2C%22id%22%3A9787092%2C%22idCardNo%22%3A%22411422199608025467%22%2C%22isRegisterHistory%22%3A0%2C%22latitude%22%3A0.0%2C%22longitude%22%3A0.0%2C%22mobile%22%3A%2215927037762%22%2C%22modifyTime%22%3A1610025427000%2C%22name%22%3A%22%E5%88%98%E9%A6%99%E7%8E%89%22%2C%22nickName%22%3A%22%E9%98%B3%E5%85%89%E4%B8%8B%E7%9A%84%E9%82%A3%E4%BA%BA%22%2C%22openId%22%3A%22oWzsq537IeWEv_66fdxl2rB6Iau4%22%2C%22regionCode%22%3A%22410104%22%2C%22registerTime%22%3A1610025427000%2C%22sex%22%3A2%2C%22source%22%3A1%2C%22uFrom%22%3A%22depa_vacc_detail%22%2C%22unionid%22%3A%22oiGJM6N1lDPclKX-5C46AaSitUXw%22%2C%22wxSubscribed%22%3A1%2C%22yn%22%3A1%7D; _xzkj_=wxtoken:81ef8042d10ceae7f337f34afc100296_d6277419ce367974d0e70422bbaf3f8a; CNZZDATA1261985103=1371327906-1609907284-%7C1610351697
+
+# 河南省
+	GET https://wx.scmttec.com/base/region/childRegions.do?parentCode=41 HTTP/1.1
+	Host: wx.scmttec.com
+	Connection: keep-alive
+	Accept: application/json, text/plain, */*
+	st: 29a72a1d2aa14bab7a6f127f2de072d6
+	tk: wxtoken:81ef8042d10ceae7f337f34afc100296_a94ae97d62a5172c14925f978e86534b
+	User-Agent: Mozilla/5.0 (Linux; Android 9; COR-AL10 Build/HUAWEICOR-AL10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120 MQQBrowser/6.2 TBS/045511 Mobile Safari/537.36 MMWEBID/9684 MicroMessenger/7.0.18.1740(0x2700123B) Process/tools WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64
+	Sec-Fetch-Mode: cors
+	X-Requested-With: com.tencent.mm
+	Sec-Fetch-Site: same-origin
+	Referer: https://wx.scmttec.com/index.html
+	Accept-Encoding: gzip, deflate, br
+	Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7
+	Cookie: UM_distinctid=176d61668197b-02a1e977b885ce-67341f2e-448e0-176d616681a15f; _xxhm_=%7B%22address%22%3A%22%22%2C%22awardPoints%22%3A0%2C%22birthday%22%3A838915200000%2C%22createTime%22%3A1609909609000%2C%22headerImg%22%3A%22http%3A%2F%2Fthirdwx.qlogo.cn%2Fmmopen%2FxjC97SLpMq3cvXlkz52xb36XWnHt7oVewePaFv0VDRL6cKEx2b9SIkIzjHQMO6WKsUevtbvpYOPDiakZ0mJ6cXHibWdf7oXEWS%2F132%22%2C%22id%22%3A9787092%2C%22idCardNo%22%3A%22411422199608025467%22%2C%22isRegisterHistory%22%3A0%2C%22latitude%22%3A0.0%2C%22longitude%22%3A0.0%2C%22mobile%22%3A%2215927037762%22%2C%22modifyTime%22%3A1610025427000%2C%22name%22%3A%22%E5%88%98%E9%A6%99%E7%8E%89%22%2C%22nickName%22%3A%22%E9%98%B3%E5%85%89%E4%B8%8B%E7%9A%84%E9%82%A3%E4%BA%BA%22%2C%22openId%22%3A%22oWzsq537IeWEv_66fdxl2rB6Iau4%22%2C%22regionCode%22%3A%22410104%22%2C%22registerTime%22%3A1610025427000%2C%22sex%22%3A2%2C%22source%22%3A1%2C%22uFrom%22%3A%22depa_vacc_detail%22%2C%22unionid%22%3A%22oiGJM6N1lDPclKX-5C46AaSitUXw%22%2C%22wxSubscribed%22%3A1%2C%22yn%22%3A1%7D; CNZZDATA1261985103=1371327906-1609907284-%7C1610351697; _xzkj_=wxtoken:81ef8042d10ceae7f337f34afc100296_a94ae97d62a5172c14925f978e86534b
+
+
+	HTTP/1.1 200 OK
+	Server: nginx
+	Date: Mon, 11 Jan 2021 09:02:14 GMT
+	Content-Type: application/json
+	Transfer-Encoding: chunked
+	Connection: keep-alive
+
+498
+{"code":"0000","data":[{"name":"北京市","value":"11"},{"name":"天津市","value":"12"},{"name":"河北省","value":"13"},{"name":"山西省","value":"14"},{"name":"内蒙古自治区","value":"15"},{"name":"辽宁省","value":"21"},{"name":"吉林省","value":"22"},{"name":"黑龙江省","value":"23"},{"name":"上海市","value":"31"},{"name":"江苏省","value":"32"},{"name":"浙江省","value":"33"},{"name":"安徽省","value":"34"},{"name":"福建省","value":"35"},{"name":"江西省","value":"36"},{"name":"山东省","value":"37"},{"name":"河南省","value":"41"},{"name":"湖北省","value":"42"},{"name":"湖南省","value":"43"},{"name":"广东省","value":"44"},{"name":"广西壮族自治区","value":"45"},{"name":"海南省","value":"46"},{"name":"重庆市","value":"50"},{"name":"四川省","value":"51"},{"name":"贵州省","value":"52"},{"name":"云南省","value":"53"},{"name":"西藏自治区","value":"54"},{"name":"陕西省","value":"61"},{"name":"甘肃省","value":"62"},{"name":"青海省","value":"63"},{"name":"宁夏回族自治区","value":"64"},{"name":"新疆维吾尔自治区","value":"65"},{"name":"香港","value":"81"}],"ok":true}
+0
+
+
+# 获取省份数据请求
+https://wx.scmttec.com/base/region/childRegions.do?parentCode=
+
+# 获取某一个省份的全部城市信息，41是河南
+https://wx.scmttec.com/base/region/childRegions.do?parentCode=41
+
+# 获取某一座城市的所有区信息，4101是获取郑州市的区信息
+https://wx.scmttec.com/base/region/childRegions.do?parentCode=4101
+
+# 获取该城市的全部信息
+	全部的请求头部
+		POST https://wx.scmttec.com/base/department/getDepartments.do HTTP/1.1
+		Host: wx.scmttec.com
+		Connection: keep-alive
+		Content-Length: 122
+		Sec-Fetch-Mode: cors
+		Origin: https://wx.scmttec.com
+		tk: wxtoken:81ef8042d10ceae7f337f34afc100296_a94ae97d62a5172c14925f978e86534b
+		User-Agent: Mozilla/5.0 (Linux; Android 9; COR-AL10 Build/HUAWEICOR-AL10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120 MQQBrowser/6.2 TBS/045511 Mobile Safari/537.36 MMWEBID/9684 MicroMessenger/7.0.18.1740(0x2700123B) Process/tools WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64
+		st: 9696c370ded8cda3978a2b0f76b442c1
+		Content-Type: application/x-www-form-urlencoded
+		Accept: application/json, text/plain, */*
+		X-Requested-With: com.tencent.mm
+		Sec-Fetch-Site: same-origin
+		Referer: https://wx.scmttec.com/index.html
+		Accept-Encoding: gzip, deflate, br
+		Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7
+		Cookie: UM_distinctid=176d61668197b-02a1e977b885ce-67341f2e-448e0-176d616681a15f; _xxhm_=%7B%22address%22%3A%22%22%2C%22awardPoints%22%3A0%2C%22birthday%22%3A838915200000%2C%22createTime%22%3A1609909609000%2C%22headerImg%22%3A%22http%3A%2F%2Fthirdwx.qlogo.cn%2Fmmopen%2FxjC97SLpMq3cvXlkz52xb36XWnHt7oVewePaFv0VDRL6cKEx2b9SIkIzjHQMO6WKsUevtbvpYOPDiakZ0mJ6cXHibWdf7oXEWS%2F132%22%2C%22id%22%3A9787092%2C%22idCardNo%22%3A%22411422199608025467%22%2C%22isRegisterHistory%22%3A0%2C%22latitude%22%3A0.0%2C%22longitude%22%3A0.0%2C%22mobile%22%3A%2215927037762%22%2C%22modifyTime%22%3A1610025427000%2C%22name%22%3A%22%E5%88%98%E9%A6%99%E7%8E%89%22%2C%22nickName%22%3A%22%E9%98%B3%E5%85%89%E4%B8%8B%E7%9A%84%E9%82%A3%E4%BA%BA%22%2C%22openId%22%3A%22oWzsq537IeWEv_66fdxl2rB6Iau4%22%2C%22regionCode%22%3A%22410104%22%2C%22registerTime%22%3A1610025427000%2C%22sex%22%3A2%2C%22source%22%3A1%2C%22uFrom%22%3A%22depa_vacc_detail%22%2C%22unionid%22%3A%22oiGJM6N1lDPclKX-5C46AaSitUXw%22%2C%22wxSubscribed%22%3A1%2C%22yn%22%3A1%7D; CNZZDATA1261985103=1371327906-1609907284-%7C1610351697; _xzkj_=wxtoken:81ef8042d10ceae7f337f34afc100296_a94ae97d62a5172c14925f978e86534b
+
+		offset=0&limit=10&name=&regionCode=4102&isOpen=1&longitude=114.40861&latitude=30.515877&sortType=1&vaccineCode=&customId=3
+
+	post方法命令：curl -d regionCode=4102 https://wx.scmttec.com/base/department/getDepartments.do
+
+
+
+
+
+
+
+
+
+
+
+https://wx.scmttec.com/order/subscribe/add.do?vaccineCode=8806&vaccineIndex=1&linkmanId=8350927&subscribeDate=2021-01-15&subscirbeTime=47158&departmentVaccineId=12302&depaCode=4101040014&serviceFee=0
+
+https://wx.scmttec.com/order/subscribe/add.do?vaccineCode=8806&vaccineIndex=1&linkmanId=8350927&subscribeDate=2021-01-15&subscirbeTime=47158&departmentVaccineId=12302&depaCode=4101040014_c8d77edbfe18bcd2fd3d5e5b85866484&serviceFee=0
+
+https://wx.scmttec.com/order/subscribe/add.do?vaccineCode=8806&vaccineIndex=1&linkmanId=8350927&subscribeDate=2021-01-16&subscirbeTime=47158&departmentVaccineId=12302&depaCode=4101040014_69d00ab0b577f5305a13cc507d12efc5&serviceFee=0
+
+https://wx.scmttec.com/order/subscribe/add.do?vaccineCode=8806&vaccineIndex=1&linkmanId=8350927&subscribeDate=2021-01-15&subscirbeTime=47158&departmentVaccineId=12302&depaCode=4101040014&serviceFee=0
+
+
+GET https://wx.scmttec.com/order/subscribe/departmentWorkTimes2.do?depaCode=4101840004&vaccCode=8806&vaccIndex=1&subsribeDate=2021-01-14&departmentVaccineId=15000&linkmanId=8350927 HTTP/1.1
+Host: wx.scmttec.com
+Connection: keep-alive
+Accept: application/json, text/plain, */*
+st: 226f0f583c4567919789b57d160aed6c
+tk: wxtoken:81ef8042d10ceae7f337f34afc100296_e0f8d9704a40beeb0d10affdaef7bfff
+User-Agent: Mozilla/5.0 (Linux; Android 9; COR-AL10 Build/HUAWEICOR-AL10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120 MQQBrowser/6.2 TBS/045511 Mobile Safari/537.36 MMWEBID/9684 MicroMessenger/7.0.18.1740(0x2700123B) Process/tools WeChat/arm64 NetType/4G Language/zh_CN ABI/arm64
+Sec-Fetch-Mode: cors
+X-Requested-With: com.tencent.mm
+Sec-Fetch-Site: same-origin
+Referer: https://wx.scmttec.com/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: UM_distinctid=176d61668197b-02a1e977b885ce-67341f2e-448e0-176d616681a15f; _xxhm_=%7B%22address%22%3A%22%22%2C%22awardPoints%22%3A0%2C%22birthday%22%3A838915200000%2C%22createTime%22%3A1609909609000%2C%22headerImg%22%3A%22http%3A%2F%2Fthirdwx.qlogo.cn%2Fmmopen%2FxjC97SLpMq3cvXlkz52xb36XWnHt7oVewePaFv0VDRL6cKEx2b9SIkIzjHQMO6WKsUevtbvpYOPDiakZ0mJ6cXHibWdf7oXEWS%2F132%22%2C%22id%22%3A9787092%2C%22idCardNo%22%3A%22411422199608025467%22%2C%22isRegisterHistory%22%3A0%2C%22latitude%22%3A0.0%2C%22longitude%22%3A0.0%2C%22mobile%22%3A%2215927037762%22%2C%22modifyTime%22%3A1610450895000%2C%22name%22%3A%22%E5%88%98%E9%A6%99%E7%8E%89%22%2C%22nickName%22%3A%22%E9%98%B3%E5%85%89%E4%B8%8B%E7%9A%84%E9%82%A3%E4%BA%BA%22%2C%22openId%22%3A%22oWzsq537IeWEv_66fdxl2rB6Iau4%22%2C%22regionCode%22%3A%22410104%22%2C%22registerTime%22%3A1610450895000%2C%22sex%22%3A2%2C%22source%22%3A1%2C%22uFrom%22%3A%22depa_vacc_detail%22%2C%22unionid%22%3A%22oiGJM6N1lDPclKX-5C46AaSitUXw%22%2C%22wxSubscribed%22%3A1%2C%22yn%22%3A1%7D; CNZZDATA1261985103=1371327906-1609907284-%7C1610507259; _xzkj_=wxtoken:81ef8042d10ceae7f337f34afc100296_e0f8d9704a40beeb0d10affdaef7bfff
+
+GET https://wx.scmttec.com/order/subscribe/add.do?vaccineCode=8806&vaccineIndex=1&linkmanId=8350927&subscribeDate=2021-01-14&subscirbeTime=66550&departmentVaccineId=15000&depaCode=4101840004_fb964e732bba8382949a82a60f32a891&serviceFee=0 HTTP/1.1
+Host: wx.scmttec.com
+Connection: keep-alive
+Accept: application/json, text/plain, */*
+st: 226f0f583c4567919789b57d160aed6c
+tk: wxtoken:81ef8042d10ceae7f337f34afc100296_e0f8d9704a40beeb0d10affdaef7bfff
+User-Agent: Mozilla/5.0 (Linux; Android 9; COR-AL10 Build/HUAWEICOR-AL10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120 MQQBrowser/6.2 TBS/045511 Mobile Safari/537.36 MMWEBID/9684 MicroMessenger/7.0.18.1740(0x2700123B) Process/tools WeChat/arm64 NetType/4G Language/zh_CN ABI/arm64
+Sec-Fetch-Mode: cors
+X-Requested-With: com.tencent.mm
+Sec-Fetch-Site: same-origin
+Referer: https://wx.scmttec.com/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: UM_distinctid=176d61668197b-02a1e977b885ce-67341f2e-448e0-176d616681a15f; _xxhm_=%7B%22address%22%3A%22%22%2C%22awardPoints%22%3A0%2C%22birthday%22%3A838915200000%2C%22createTime%22%3A1609909609000%2C%22headerImg%22%3A%22http%3A%2F%2Fthirdwx.qlogo.cn%2Fmmopen%2FxjC97SLpMq3cvXlkz52xb36XWnHt7oVewePaFv0VDRL6cKEx2b9SIkIzjHQMO6WKsUevtbvpYOPDiakZ0mJ6cXHibWdf7oXEWS%2F132%22%2C%22id%22%3A9787092%2C%22idCardNo%22%3A%22411422199608025467%22%2C%22isRegisterHistory%22%3A0%2C%22latitude%22%3A0.0%2C%22longitude%22%3A0.0%2C%22mobile%22%3A%2215927037762%22%2C%22modifyTime%22%3A1610450895000%2C%22name%22%3A%22%E5%88%98%E9%A6%99%E7%8E%89%22%2C%22nickName%22%3A%22%E9%98%B3%E5%85%89%E4%B8%8B%E7%9A%84%E9%82%A3%E4%BA%BA%22%2C%22openId%22%3A%22oWzsq537IeWEv_66fdxl2rB6Iau4%22%2C%22regionCode%22%3A%22410104%22%2C%22registerTime%22%3A1610450895000%2C%22sex%22%3A2%2C%22source%22%3A1%2C%22uFrom%22%3A%22depa_vacc_detail%22%2C%22unionid%22%3A%22oiGJM6N1lDPclKX-5C46AaSitUXw%22%2C%22wxSubscribed%22%3A1%2C%22yn%22%3A1%7D; CNZZDATA1261985103=1371327906-1609907284-%7C1610507259; _xzkj_=wxtoken:81ef8042d10ceae7f337f34afc100296_e0f8d9704a40beeb0d10affdaef7bfff
+
+4a4eccf02eda431817ae943d22d8bbc0
+4ccb85247756c37b2b5fd20293944e58
+f4c4f99eb67e7673753164409e91f592
+fb964e732bba8382949a82a60f32a891
+ef6a11b868e019843d00553a71ac4f42
+1c229c87c7bace3b8c9c39636d6828b0
+d1c7d4b2f2b2be820becbc7066ced407
+6b429e304e354ddcc1dae44beea9744d
+
+
+
+GET https://wx.scmttec.com/order/subscribe/add.do?vaccineCode=8806&vaccineIndex=1&linkmanId=8350927&subscribeDate=2021-01-14&subscirbeTime=66551&departmentVaccineId=15000&depaCode=4101840004_2c4f6a70683bf7044eaa5f3afe24dbd5&serviceFee=0 HTTP/1.1
+Host: wx.scmttec.com
+Connection: keep-alive
+Accept: application/json, text/plain, */*
+st: 94185795f4449f8f4cc9266d84b18684
+tk: wxtoken:81ef8042d10ceae7f337f34afc100296_3016de6ee458c2f5b186f51e143661b1
+User-Agent: Mozilla/5.0 (Linux; Android 9; COR-AL10 Build/HUAWEICOR-AL10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120 MQQBrowser/6.2 TBS/045511 Mobile Safari/537.36 MMWEBID/9684 MicroMessenger/7.0.18.1740(0x2700123B) Process/tools WeChat/arm64 NetType/4G Language/zh_CN ABI/arm64
+Sec-Fetch-Mode: cors
+X-Requested-With: com.tencent.mm
+Sec-Fetch-Site: same-origin
+Referer: https://wx.scmttec.com/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: UM_distinctid=176d61668197b-02a1e977b885ce-67341f2e-448e0-176d616681a15f; _xxhm_=%7B%22address%22%3A%22%22%2C%22awardPoints%22%3A0%2C%22birthday%22%3A838915200000%2C%22createTime%22%3A1609909609000%2C%22headerImg%22%3A%22http%3A%2F%2Fthirdwx.qlogo.cn%2Fmmopen%2FxjC97SLpMq3cvXlkz52xb36XWnHt7oVewePaFv0VDRL6cKEx2b9SIkIzjHQMO6WKsUevtbvpYOPDiakZ0mJ6cXHibWdf7oXEWS%2F132%22%2C%22id%22%3A9787092%2C%22idCardNo%22%3A%22411422199608025467%22%2C%22isRegisterHistory%22%3A0%2C%22latitude%22%3A0.0%2C%22longitude%22%3A0.0%2C%22mobile%22%3A%2215927037762%22%2C%22modifyTime%22%3A1610450895000%2C%22name%22%3A%22%E5%88%98%E9%A6%99%E7%8E%89%22%2C%22nickName%22%3A%22%E9%98%B3%E5%85%89%E4%B8%8B%E7%9A%84%E9%82%A3%E4%BA%BA%22%2C%22openId%22%3A%22oWzsq537IeWEv_66fdxl2rB6Iau4%22%2C%22regionCode%22%3A%22410104%22%2C%22registerTime%22%3A1610450895000%2C%22sex%22%3A2%2C%22source%22%3A1%2C%22uFrom%22%3A%22depa_vacc_detail%22%2C%22unionid%22%3A%22oiGJM6N1lDPclKX-5C46AaSitUXw%22%2C%22wxSubscribed%22%3A1%2C%22yn%22%3A1%7D; CNZZDATA1261985103=1371327906-1609907284-%7C1610518062; _xzkj_=wxtoken:81ef8042d10ceae7f337f34afc100296_3016de6ee458c2f5b186f51e143661b1
+
+GET https://wx.scmttec.com/order/subscribe/add.do?vaccineCode=8806&vaccineIndex=1&linkmanId=8350927&subscribeDate=2021-01-14&subscirbeTime=66551&departmentVaccineId=15000&depaCode=4101840004_2c4f6a70683bf7044eaa5f3afe24dbd5&serviceFee=0 HTTP/1.1
+Host: wx.scmttec.com
+Connection: keep-alive
+Accept: application/json, text/plain, */*
+st: 94185795f4449f8f4cc9266d84b18684
+tk: wxtoken:81ef8042d10ceae7f337f34afc100296_3016de6ee458c2f5b186f51e143661b1
+User-Agent: Mozilla/5.0 (Linux; Android 9; COR-AL10 Build/HUAWEICOR-AL10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120 MQQBrowser/6.2 TBS/045511 Mobile Safari/537.36 MMWEBID/9684 MicroMessenger/7.0.18.1740(0x2700123B) Process/tools WeChat/arm64 NetType/4G Language/zh_CN ABI/arm64
+Sec-Fetch-Mode: cors
+X-Requested-With: com.tencent.mm
+Sec-Fetch-Site: same-origin
+Referer: https://wx.scmttec.com/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: UM_distinctid=176d61668197b-02a1e977b885ce-67341f2e-448e0-176d616681a15f; _xxhm_=%7B%22address%22%3A%22%22%2C%22awardPoints%22%3A0%2C%22birthday%22%3A838915200000%2C%22createTime%22%3A1609909609000%2C%22headerImg%22%3A%22http%3A%2F%2Fthirdwx.qlogo.cn%2Fmmopen%2FxjC97SLpMq3cvXlkz52xb36XWnHt7oVewePaFv0VDRL6cKEx2b9SIkIzjHQMO6WKsUevtbvpYOPDiakZ0mJ6cXHibWdf7oXEWS%2F132%22%2C%22id%22%3A9787092%2C%22idCardNo%22%3A%22411422199608025467%22%2C%22isRegisterHistory%22%3A0%2C%22latitude%22%3A0.0%2C%22longitude%22%3A0.0%2C%22mobile%22%3A%2215927037762%22%2C%22modifyTime%22%3A1610450895000%2C%22name%22%3A%22%E5%88%98%E9%A6%99%E7%8E%89%22%2C%22nickName%22%3A%22%E9%98%B3%E5%85%89%E4%B8%8B%E7%9A%84%E9%82%A3%E4%BA%BA%22%2C%22openId%22%3A%22oWzsq537IeWEv_66fdxl2rB6Iau4%22%2C%22regionCode%22%3A%22410104%22%2C%22registerTime%22%3A1610450895000%2C%22sex%22%3A2%2C%22source%22%3A1%2C%22uFrom%22%3A%22depa_vacc_detail%22%2C%22unionid%22%3A%22oiGJM6N1lDPclKX-5C46AaSitUXw%22%2C%22wxSubscribed%22%3A1%2C%22yn%22%3A1%7D; CNZZDATA1261985103=1371327906-1609907284-%7C1610518062; _xzkj_=wxtoken:81ef8042d10ceae7f337f34afc100296_3016de6ee458c2f5b186f51e143661b1
+
+
+https://wx.scmttec.com/order/subscribe/add.do?vaccineCode=8806&vaccineIndex=1&linkmanId=8350927&subscribeDate=2021-01-14&subscirbeTime=66551&departmentVaccineId=15000&depaCode=4101840004_4ce8d0d49df02e593a830e736550811c&serviceFee=0
+
+GET https://wx.scmttec.com/order/subscribe/add.do?vaccineCode=8806&vaccineIndex=1&linkmanId=8350927&subscribeDate=2021-01-14&subscirbeTime=66551&departmentVaccineId=15000&depaCode=4101840004_090ce172dbb4e8f5ac4cdc315922532c&serviceFee=0 HTTP/1.1
+Host: wx.scmttec.com
+
+
+# 2021-01-13 20:33:36 订阅：9:15-9:30
+https://wx.scmttec.com/order/subscribe/add.do?vaccineCode=8806&vaccineIndex=1&linkmanId=8350927&subscribeDate=2021-01-14&subscirbeTime=66551&departmentVaccineId=15000&depaCode=4101840004_30d451b946c6109f973ffac1f4dccbac&serviceFee=0
+
+# https://wx.scmttec.com/order/subscribe/add.do?vaccineCode=8806&vaccineIndex=1&linkmanId=8350927&subscribeDate=2021-01-14&subscirbeTime=66551&departmentVaccineId=15000&depaCode=4101840004_1536405d69aaadf228a087d0936c187a&serviceFee=0
+# https://wx.scmttec.com/order/subscribe/add.do?vaccineCode=8806&vaccineIndex=1&linkmanId=8350927&subscribeDate=2021-01-14&subscirbeTime=66551&departmentVaccineId=15000&depaCode=4101840004_6e6ecf9819e117e16f5a55a622ee34a9&serviceFee=0
+
+# GET https://wx.scmttec.com/order/subscribe/add.do?vaccineCode=8806&vaccineIndex=1&linkmanId=8350927&subscribeDate=2021-01-14&subscirbeTime=66551&departmentVaccineId=15000&depaCode=4101840004_2e4bc52f8a976634fd22a997d75f80bd&serviceFee=0
+# {"code":"0000","data":"2021-01-13 21:17:04","ok":true}
+{
+	"code":"9999",
+	"msg":"该疫苗仅限河南省郑州市新郑市用户预约",
+	"notOk":true,
+	"ok":false
+}
+
+# GET https://wx.scmttec.com/order/subscribe/add.do?vaccineCode=8806&vaccineIndex=1&linkmanId=8350927&subscribeDate=2021-01-14&subscirbeTime=93373&departmentVaccineId=15000&depaCode=4101840004_0b27f2500e570aeb4ed3390503150739&serviceFee=0
+# decodetime=2021-01-13 21:17
+# {"code":"0000","data":"2021-01-13 21:17:16","ok":true}
+{
+	"code":"2101",
+	"msg":"服务器繁忙，请稍后再试！",
+	"notOk":true,
+	"ok":false
+}
+
+
+
+
+
+
+####################################################################################################################################
+####################################################################################################################################
+####################################################################################################################################
+####################################################################################################################################
+
+# https://wx.scmttec.com/order/subscribe/add.do?vaccineCode=8806&vaccineIndex=1&linkmanId=8350927&subscribeDate=2021-01-14&subscirbeTime=66551&departmentVaccineId=15000&depaCode=4101840004_b2c0b66a2faf0361847429e730841fdc&serviceFee=0
+# {"code":"0000","data":"2021-01-13 21:20:45","ok":true}
+{
+	"code":"9999",
+	"msg":"该疫苗仅限河南省郑州市新郑市用户预约",
+	"notOk":true,
+	"ok":false
+}
+
+# https://wx.scmttec.com/order/subscribe/add.do?vaccineCode=8806&vaccineIndex=1&linkmanId=8350927&subscribeDate=2021-01-14&subscirbeTime=66551&departmentVaccineId=15000&depaCode=4101840004_0eb7adac7abc099a77a817d8b9eb6cb4&serviceFee=0
+# {"code":"0000","data":"2021-01-13 21:20:54","ok":true}
+# decodetime=20210113212066551abcde     == md5 ==>   0eb7adac7abc099a77a817d8b9eb6cb4
+# 应该：b2c0b66a2faf0361847429e730841fdc
+{
+	"code":"2101",
+	"msg":"服务器繁忙，请稍后再试！",
+	"notOk":true,
+	"ok":false
+}
+
+####################################################################################################################################
+####################################################################################################################################
+####################################################################################################################################
+####################################################################################################################################
+
+
+
+GET https://wx.scmttec.com/passport/wx/getJsSdkConfig.do?url=https:%2F%2Fwx.scmttec.com%2Findex.html HTTP/1.1
+Host: wx.scmttec.com
+Connection: keep-alive
+Accept: application/json, text/plain, */*
+st: b1ab7c85b36d667e9f8c512151f98772
+tk: wxtoken:81ef8042d10ceae7f337f34afc100296_3165df7e737d3badd83cf17964126c8b
+User-Agent: Mozilla/5.0 (Linux; Android 9; COR-AL10 Build/HUAWEICOR-AL10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120 MQQBrowser/6.2 TBS/045511 Mobile Safari/537.36 MMWEBID/9684 MicroMessenger/7.0.18.1740(0x2700123B) Process/tools WeChat/arm64 NetType/WIFI Language/zh_CN ABI/arm64
+Sec-Fetch-Mode: cors
+X-Requested-With: com.tencent.mm
+Sec-Fetch-Site: same-origin
+Referer: https://wx.scmttec.com/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: UM_distinctid=176d61668197b-02a1e977b885ce-67341f2e-448e0-176d616681a15f; _xxhm_=%7B%22address%22%3A%22%22%2C%22awardPoints%22%3A0%2C%22birthday%22%3A838915200000%2C%22createTime%22%3A1609909609000%2C%22headerImg%22%3A%22http%3A%2F%2Fthirdwx.qlogo.cn%2Fmmopen%2FxjC97SLpMq3cvXlkz52xb36XWnHt7oVewePaFv0VDRL6cKEx2b9SIkIzjHQMO6WKsUevtbvpYOPDiakZ0mJ6cXHibWdf7oXEWS%2F132%22%2C%22id%22%3A9787092%2C%22idCardNo%22%3A%22411422199608025467%22%2C%22isRegisterHistory%22%3A0%2C%22latitude%22%3A0.0%2C%22longitude%22%3A0.0%2C%22mobile%22%3A%2215927037762%22%2C%22modifyTime%22%3A1610450895000%2C%22name%22%3A%22%E5%88%98%E9%A6%99%E7%8E%89%22%2C%22nickName%22%3A%22%E9%98%B3%E5%85%89%E4%B8%8B%E7%9A%84%E9%82%A3%E4%BA%BA%22%2C%22openId%22%3A%22oWzsq537IeWEv_66fdxl2rB6Iau4%22%2C%22regionCode%22%3A%22410104%22%2C%22registerTime%22%3A1610450895000%2C%22sex%22%3A2%2C%22source%22%3A1%2C%22uFrom%22%3A%22depa_vacc_detail%22%2C%22unionid%22%3A%22oiGJM6N1lDPclKX-5C46AaSitUXw%22%2C%22wxSubscribed%22%3A1%2C%22yn%22%3A1%7D; MEIQIA_TRACK_ID=1n0u3doGc1unZkM1ex2PVknFjHA; MEIQIA_VISIT_ID=1n0u3j3blqbzmDDRXA0GeWEciqJ; CNZZDATA1261985103=1371327906-1609907284-%7C1610545073; _xzkj_=wxtoken:81ef8042d10ceae7f337f34afc100296_3165df7e737d3badd83cf17964126c8b
+
+==>
+{
+	"code":"0000",
+	"data":{
+		"appId":"wx6174ae73e1a7ed1c",
+		"nonceStr":"healthych",
+		"signature":"f87efd4a15260030e50f3954542f7d56e6d4d1f8",
+		"timestamp":1610550140,
+		"url":"https://wx.scmttec.com/index.html"
+	},
+	"notOk":false,
+	"ok":true
+}
+
