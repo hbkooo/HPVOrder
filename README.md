@@ -4,7 +4,7 @@
 - python3环境，包括基础的各种包（运行时缺啥补啥，pip install ...)
 - 抓包软件，我使用的Fiddler,可以参考这个[博客安装使用](https://blog.csdn.net/ychgyyn/article/details/82154433), 也可以使用其他抓包方法。
 ## 修改配置参数信息
-- 首先抓包获取tk参数，并修改main.py文件中的[tk字段](main.py)（抓包流程不讲解）
+- 首先抓包获取tk参数，并修改main.py文件中的[tk字段](main.py#L24)（抓包流程不讲解）
 - 修改抢苗的个人信息和待抢的疫苗信息：[抢苗信息](YuemiaoPublicAccount/config.py)
 - 修改有可预约的疫苗时发送邮件的[邮件登录信息](thirdparty/config.py)。如何获取邮箱授权码：[获取QQ邮箱授权码方法](https://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001256&&id=28)
 
