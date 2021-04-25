@@ -696,7 +696,7 @@ def check_order_number(departmentCode, departmentVaccineId, linkmanId=8350927, u
             if len(departmentName) > 12:
                 departmentName = departmentName[0:12]
             # print(departmentName)
-            # send_text_message([departmentName, str(maxSub)])
+            send_text_message([departmentName, str(maxSub)])
             return subscribeDates
     return 0
 
