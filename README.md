@@ -5,8 +5,8 @@
 - 抓包软件，我使用的Fiddler,可以参考这个[博客安装使用](https://blog.csdn.net/ychgyyn/article/details/82154433), 也可以使用其他抓包方法。
 ## 修改配置参数信息
 - 首先抓包获取tk参数，并修改main.py文件中的[tk字段](main.py#L24)（抓包流程不讲解）
-- 修改抢苗的个人信息和待抢的疫苗信息：[抢苗信息](YuemiaoPublicAccount/config.py)
-- 修改有可预约的疫苗时发送邮件的[邮件登录信息](thirdparty/config.py)。如何获取邮箱授权码：[获取QQ邮箱授权码方法](https://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001256&&id=28)
+- 修改抢苗的个人信息和待抢的疫苗信息：[抢苗信息](YuemiaoPublicAccount/config.py#L12-L19)
+- 修改有可预约的疫苗时发送邮件的[邮件登录信息](thirdparty/config.py#L3-L9)。如何获取邮箱授权码：[获取QQ邮箱授权码方法](https://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001256&&id=28)
 
 ## 功能
  目前暂时不支持直接自动预约功能，因为技术原因，自动预约所需要的参数问题暂未解决...，只可以查询是否存在可以预约的社区医院，然后发送邮件提示用户去登录预约。
@@ -65,5 +65,5 @@
 - 在查询是否存在可预约的社区时，程序运行之后会一直运行，直到tk值失效或者查找到了可以预约的社区（之后会发送邮件提示）才会结束
 - tk值根据我目前的测试，每次抓包获取之后有两个小时的时间，两个小时之后该tk值会失效，需要重新抓包获取
 - 暂不支持自动预约功能，只有预约提示功能
-- 目前不支持免费短信提示方式；如果你在榛子云上充值了，可以修改[榛子云信息](thirdparty/config.py)中的各种模板参数来实现发送短信提示。[榛子云申请地址](http://sms_developer.zhenzikj.com/zhenzisms_user/login.html)
+- 目前不支持免费短信提示方式；如果你在榛子云上充值了，可以修改[榛子云信息](thirdparty/config.py#L14-L18)中的各种模板参数来实现发送短信提示。[榛子云申请地址](http://sms_developer.zhenzikj.com/zhenzisms_user/login.html)
 
