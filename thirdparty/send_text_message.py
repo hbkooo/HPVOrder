@@ -68,8 +68,8 @@ def send_text_message(result):
 
 def test():
     url = 'https://sms_developer.zhenzikj.com'
-    AppId = 102200
-    AppSecre = 'f95b72fe-8bda-401a-bba1-8bcc5d54e41d'
+    AppId = 123456
+    AppSecre = '12345678-1234-1234-1234-123456789123'
 
     params = {}
     params['number'] = '15927037762'
