@@ -6,7 +6,7 @@
 ## 修改配置参数信息
 - 首先抓包获取tk参数，并修改main.py文件中的[tk字段](main.py#L24)（抓包流程不讲解）
 - 修改抢苗的个人信息和待抢的疫苗信息：[抢苗信息](YuemiaoPublicAccount/config.py)
-- 修改有可预约的疫苗时发送邮件的[邮件登录信息](thirdparty/config.py#L(5-9))。如何获取邮箱授权码：[获取QQ邮箱授权码方法](https://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001256&&id=28)
+- 修改有可预约的疫苗时发送邮件的[邮件登录信息](thirdparty/config.py)。如何获取邮箱授权码：[获取QQ邮箱授权码方法](https://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001256&&id=28)
 
 ## 功能
  目前暂时不支持直接自动预约功能，因为技术原因，自动预约所需要的参数问题暂未解决...，只可以查询是否存在可以预约的社区医院，然后发送邮件提示用户去登录预约。
