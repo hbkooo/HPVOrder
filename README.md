@@ -50,7 +50,7 @@
 
 `python main.py info --province 河南省`
 
-所有的保存的信息存储路径可以在字段[save_departments_info_root](YuemiaoPublicAccount/config.py)中配置
+所有的保存的信息存储路径可以在字段[save_departments_info_root](YuemiaoPublicAccount/config.py#L10)中配置
 
 ### 获取已经到苗的社区信息
 - 通过省份获取到苗社区信息：
