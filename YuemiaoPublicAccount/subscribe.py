@@ -244,7 +244,7 @@ def subscribe_by_region_id(regionCode, linkmanId=8350927, username=None):
     return count
 
 
-def ubscribe_by_province(province):
+def subscribe_by_province(province):
     """
     根据省的名字订阅全省可订阅的社区医院
     :param province: 省名字
